@@ -1,34 +1,7 @@
 let  produto = "Livro";
 let preco: number = 200;
 
-const carro: {
-  marca: string;
-  portas: number;
-} = {
-  marca: "Audi",
-  portas: 5,
-
-};
-
-const barato = 200 < 400 ? true : "produto caro";
-
-function somar(a: number, b: number){
-  return a + b; 
+function normalizarTexto(texto:string) {
+  return texto.trim().toLowerCase();
 }
-somar(4,10);
-//somar(4,'4');
-
-const nintendo ={
-  nome: "Nintendo",
-  preco:"2000",
-
-};
-
-function transformarPreco(produto: {nome:string; preco:string}){
-  produto.preco = 'R$' + produto.preco;
-  return produto;
-
-}
- const produtoNovo =  transformarPreco(nintendo);
-
- console.log(produtoNovo);
+console.log(normalizarTexto('DesIng'));
